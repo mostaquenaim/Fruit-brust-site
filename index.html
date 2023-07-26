@@ -32,7 +32,7 @@
 </head>
 
 <body class="">
-    <header class="md:mx-16">
+    <header class="mx-4 md:mx-16">
         <!-- navbar  -->
         <div class="navbar md:bg-fruit-clr rounded-[600px] py-6 md:my-14">
             <div class="navbar-start">
@@ -58,6 +58,19 @@
                         <li><a>Homepage</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>About</a></li>
+                        <li>
+                            <a>
+                                <input type="text" placeholder="Search here"
+                                    class="bg-white rounded-[600px] pl-5">
+                                <div class="absolute flex items-center  cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-400 " fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -100,8 +113,8 @@
                         <li>
                             <a>
                                 <input type="text" placeholder="Search here"
-                                    class="bg-white rounded-[600px] px-3 py-2 pr-10 pl-5">
-                                <div class="absolute flex items-center pr-3 cursor-pointer">
+                                    class="bg-white rounded-[600px] pl-5">
+                                <div class="absolute flex items-center  cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-400 " fill="none"
                                         viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -240,7 +253,7 @@
         </section>
     </header>
 
-    <main class="md:mx-16">
+    <main class="mx-4 md:mx-16">
         <!-- deal of the day -->
         <section class="mb-28 mt-48 ">
             <div class="flex flex-col md:flex-row gap-5 justify-between items-center text-center md:text-left">
@@ -629,10 +642,11 @@
             </div>
         </section>
         <!-- meet the team  -->
-        <section class="relative w-full h-[600px] bg-cover bg-[url('images/banner1.png')] text-white">
+        <section
+            class="relative w-full bg-[url('images/banner1.png')] bg-center bg-cover bg-no-repeat h-[1400px] lg:h-[600px]  justify-center text-white">
             <div class="absolute inset-0 bg-black opacity-70"></div>
-            <div class="relative flex flex-col text-center top-1/4">
-                <h1 class="font-extrabold text-5xl">
+            <div class="relative flex flex-col text-center top-10 lg:top-1/4">
+                <h1 class="font-extrabold text-xl lg:text-5xl">
                     Meet the team section
                 </h1>
                 <p class="mt-5 mb-10">
@@ -640,9 +654,10 @@
                     <br> Latin literature from 45 BC, making it over 2000 years old.
                 </p>
                 <!-- members  -->
-                <div class="flex flex-col md:flex-row md:flex-wrap text-center justify-center gap-32">
+                <div
+                    class="flex flex-col lg:flex-row lg:flex-wrap text-center items-center justify-center gap-5 lg:gap-24 ">
                     <div class="flex flex-col gap-2">
-                        <img src="images/member1.png" alt="">
+                        <img class="" src="images/member1.png" alt="">
                         <h1 class="text-xl font-bold">
                             Mostaque Naim
                         </h1>
@@ -714,20 +729,22 @@
     </main>
 
     <!-- footer  -->
-    <footer class="footer footer-center p-10 bg-neutral-900 text-primary-content mt-32">
-        <div>
+    <footer class="footer footer-center p-10 bg-neutral-900 text-primary-content mt-32 w-full">
+        <div class="">
             <div class="flex items-center align-middle gap-2">
                 <img src="images/logo.png" alt="">
                 <h1 class="text-3xl font-bold">Fruit Burst</h1>
             </div>
-            <ul class="flex gap-5 mt-8">
+            <ul class="grid grid-cols-4 md:flex gap-5 mt-8 mx-auto">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Shop</a></li>
-                <li><a href="">All Fruits</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">My Account</a></li>
+                <li><a href="">All Fruits</a></li> 
+                <li class="col-span-2"><a href="">Support</a></li>
+                <li><a href="col-span-2">My Account</a></li>
             </ul>
+            
+            
         </div>
         <div class="grid grid-flow-col gap-4">
             <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
